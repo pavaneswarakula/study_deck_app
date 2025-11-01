@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Hierarchical Study Deck</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced Hierarchical Study Deck</h1>
+    </header>
+
+    <div id="app-container">
+        <aside id="sidebar">
+            <h2>Deck Management</h2>
+            
+            <div id="file-upload-section">
+                <label for="json-file">Upload Study Deck JSON:</label>
+                <input type="file" id="json-file" accept=".json">
+                <p id="upload-status" class="status-message">Awaiting file upload...</p>
+            </div>
+
+            <div id="playlist-summary" class="summary-box">
+                <p>Playlist: <span id="summary-chapters">0</span> Chapters, <span id="summary-questions">0</span> Questions</p>
+                <button id="shuffle-playlist-btn" disabled>Shuffle Playlist & Start Study</button>
+            </div>
+            
+            <div id="chapter-tree">
+                <h3>Subject & Chapter Hierarchy</h3>
+                </div>
+        </aside>
+
+        <main id="main-content">
+            <div id="flashcard-container">
+                <div id="flashcard" class="flashcard-disabled">
+                    <div class="flipper">
+                        <div class="front">
+                            <p class="card-origin"></p>
+                            <h2 id="card-question">Upload a JSON file and select chapters to begin.</h2>
+                            <p class="click-to-flip">(Click to see answer)</p>
+                        </div>
+                        <div class="back">
+                            <p class="card-origin"></p>
+                            <h2 id="card-answer"></h2>
+                            <p class="click-to-flip">(Click to flip back)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="navigation-controls">
+                <button id="prev-btn" disabled>« Previous</button>
+                <div id="grading-controls">
+                    <button id="wrong-btn" class="grade-btn wrong-btn" disabled>I Need Work</button>
+                    <button id="correct-btn" class="grade-btn correct-btn" disabled>I Got It!</button>
+                </div>
+                <button id="next-btn" disabled>Next »</button>
+            </div>
+
+            <div id="question-navigator">
+                <h4>Playlist Navigator (<span id="current-index-display">0</span>/<span id="total-questions-display">0</span>)</h4>
+                <div id="navigator-tiles">
+                    </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

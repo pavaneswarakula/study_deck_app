@@ -1,0 +1,50 @@
+{
+    "Computer Science Fundamentals": {
+        "Chapter 1: Data Structures Basics": [
+            {
+                "q": "What is the primary difference between an array and a linked list?",
+                "a": "Arrays store elements in contiguous memory locations and allow O(1) random access, while linked lists store elements non-contiguously using pointers and only allow O(n) access."
+            },
+            {
+                "q": "Define 'stack' and the principle it operates on.",
+                "a": "A stack is a linear data structure that operates on the LIFO (Last-In, First-Out) principle, typically implementing Push and Pop operations."
+            },
+            {
+                "q": "What is the time complexity of searching a value in a binary search tree (BST) in the average case?",
+                "a": "The time complexity is O(log n), where n is the number of nodes."
+            }
+        ],
+        "Chapter 2: Algorithmic Complexity": [
+            {
+                "q": "What does O(n^2) represent in Big O notation?",
+                "a": "Quadratic time complexity, meaning the execution time grows proportional to the square of the input size. It is typical for inefficient sorting algorithms like Bubble Sort."
+            },
+            {
+                "q": "Give an example of an algorithm with O(1) complexity.",
+                "a": "Accessing an element in an array by its index."
+            }
+        ]
+    },
+    "World History": {
+        "Chapter 1: Ancient Civilizations": [
+            {
+                "q": "Which river valley civilization developed the practice of cuneiform writing?",
+                "a": "Mesopotamia, specifically the Sumerians."
+            },
+            {
+                "q": "What was the purpose of the Great Wall of China during its initial construction?",
+                "a": "To protect the northern borders of the Chinese empire against invading nomadic tribes like the Xiongnu."
+            }
+        ],
+        "Chapter 2: The Renaissance": [
+            {
+                "q": "What is 'Humanism' as it pertains to the Renaissance?",
+                "a": "An intellectual movement focusing on human potential and achievements, shifting emphasis from divine matters to human endeavors and classical studies."
+            },
+            {
+                "q": "Who painted the Sistine Chapel ceiling?",
+                "a": "Michelangelo."
+            }
+        ]
+    }
+}
